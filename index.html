@@ -348,6 +348,14 @@ footer b{color:var(--navy)}
   .card,.focus{box-shadow:none} section{page-break-inside:avoid}
   .tab-panel{display:block !important}
 }
+
+  /* ---- 附件链接 ---- */
+  .att{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:8px;
+       font-size:12.5px;font-weight:700;text-decoration:none;white-space:nowrap;transition:.15s;line-height:1.2}
+  .att.xls{background:#e7f7ee;color:#0b7a4b;border:1px solid #b7e6cd}
+  .att.xls:hover{background:#d1efdf;transform:translateY(-1px)}
+  .att.img{background:#e8efff;color:#1c46b8;border:1px solid #c2d4ff}
+  .att.img:hover{background:#d6e2ff;transform:translateY(-1px)}
 </style>
 </head>
 <body>
@@ -558,43 +566,50 @@ footer b{color:var(--navy)}
     <div class="tbl-wrap">
       <table>
         <thead>
-          <tr><th style="width:44px">#</th><th style="width:280px">流程名称</th><th>流程说明</th></tr>
+          <tr><th style="width:44px">#</th><th style="width:250px">流程名称</th><th>流程说明</th><th style="width:136px">附件明细</th></tr>
         </thead>
         <tbody>
           <tr>
             <td class="num">1</td>
             <td><b>微信达人自动建联</b></td>
             <td style="color:var(--ink-2)">自动添加达人微信</td>
+            <td><a class="att xls" href="https://zero-rainf.github.io/rpa-ai-oct-report/att/1-wechat-auto-add.xlsx" target="_blank" rel="noopener noreferrer">📊 Excel 表格</a></td>
           </tr>
           <tr>
             <td class="num">2</td>
             <td><b>投放账户预算消耗预警</b></td>
             <td style="color:var(--ink-2)">投放过程中常遇到计划消耗撞线，人工盯盘难以实时跟进，由程序自动监控并预警</td>
+            <td><a class="att img" href="https://zero-rainf.github.io/rpa-ai-oct-report/att/2-ad-budget-monitor.png" target="_blank" rel="noopener noreferrer">🖼️ 操作截图</a></td>
           </tr>
           <tr>
             <td class="num">3</td>
             <td><b>ERP 库存查询</b></td>
             <td style="color:var(--ink-2)">ERP 自动完成库存查询，根据条件判断是小库还是批发库</td>
+            <td><a class="att xls" href="https://zero-rainf.github.io/rpa-ai-oct-report/att/3-erp-inventory.xlsx" target="_blank" rel="noopener noreferrer">📊 Excel 表格</a></td>
           </tr>
           <tr>
             <td class="num">4</td>
             <td><b>物流 - ERP 数据下载合并（标准版）</b></td>
             <td style="color:var(--ink-2)">面单打印 + 出库订单商品拼接，导出、合并、匹配</td>
+            <td><a class="att img" href="https://zero-rainf.github.io/rpa-ai-oct-report/att/4-logistics-erp.png" target="_blank" rel="noopener noreferrer">🖼️ 操作截图</a></td>
           </tr>
           <tr>
             <td class="num">5</td>
             <td><b>商品多平台底价监控（AI 版）</b></td>
             <td style="color:var(--ink-2)">收集商品多平台数据，矫正乱价情况</td>
+            <td><a class="att xls" href="https://zero-rainf.github.io/rpa-ai-oct-report/att/5-multiplatform-price.xlsx" target="_blank" rel="noopener noreferrer">📊 Excel 表格</a></td>
           </tr>
           <tr>
             <td class="num">6</td>
             <td><b>巨量百应公屏自动回复</b></td>
             <td style="color:var(--ink-2)">评论区有人提问时进行简单的自动回复</td>
+            <td><a class="att img" href="https://zero-rainf.github.io/rpa-ai-oct-report/att/6-douyin-live-reply.png" target="_blank" rel="noopener noreferrer">🖼️ 操作截图</a></td>
           </tr>
           <tr>
             <td class="num">7</td>
             <td><b>产品日报数据填写自动化 V2</b></td>
             <td style="color:var(--ink-2)">分店铺统计监控数据</td>
+            <td><a class="att img" href="https://zero-rainf.github.io/rpa-ai-oct-report/att/7-product-daily-report.png" target="_blank" rel="noopener noreferrer">🖼️ 操作截图</a></td>
           </tr>
         </tbody>
       </table>
